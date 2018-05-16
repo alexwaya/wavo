@@ -14,6 +14,7 @@ input[type=submit] {
     background-color: #056b5b;
     color: white;
     text-align: center;
+    width: 50%;
 }
 
 /* Style the container for inputs */
@@ -21,45 +22,8 @@ input[type=submit] {
     background-color: #f1f1f1;
     padding: 20px;
     width: 100vh;
+    height: 100%;
 }
-
-/* The message box is shown when the user clicks on the password field */
-#message {
-    display:none;
-    background: #f1f1f1;
-    color: #000;
-    position: relative;
-    padding: 20px;
-    margin-top: 10px;
-}
-
-#message p {
-    padding: 10px 35px;
-    font-size: 18px;
-}
-
-/* Add a green text color and a checkmark when the requirements are right */
-.valid {
-    color: #056b5b;
-}
-
-.valid:before {
-    position: relative;
-    left: -35px;
-    content: "✔";
-}
-
-/* Add a red text color and an "x" when the requirements are wrong */
-.invalid {
-    color: red;
-}
-
-.invalid:before {
-    position: relative;
-    left: -35px;
-    content: "✖";
-}
-
 
 h3{
     text-align: center;
@@ -113,51 +77,6 @@ button:hover {
 }
 
 
-
-/* styles for profile page */
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
+.psw{
     text-align: center;
-    font-family: arial;
-  }
-  
-  .title {
-    color: grey;
-    font-size: 18px;
-  }
-  
-  button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color:white;
-    background-color: #056b5b;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-  }
-  
-  button:hover, a:hover {
-    opacity: 0.7;
-  }
-
-
-  img {
-    border: 5px solid #fff;
-    position: relative;
-    border-radius: 50%;
-  }
-
-
-
+}
