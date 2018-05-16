@@ -1,6 +1,10 @@
 /* GENERAL CSS */
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background: url('../assets/repeat.jpg');
+    opacity: .8;
+    background-attachment: fixed;
+    background-repeat: repeat;
 }
 
 
@@ -16,6 +20,7 @@ body{
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
+    margin-top:0;
 
 }
 
@@ -27,11 +32,20 @@ ul{
     width: 30%;
     height: 100%;
     background: black;
-    padding-top: 8%;
+    overflow-x: hidden;
+    display: none;
+    z-index: 5;
+    /* padding-top: 8%; */
 }
 
 ul#hidden li{
     display: none;
+
+
+    -webkit-transition: all 2s;
+    -o-transition: all 2s;
+    -ms-transition: all 2s;
+    transition: all 2s;
     
 }
 
@@ -74,4 +88,92 @@ ul li a:used {
 #menu:hover ul li{
     display: block;
 
+}
+
+
+/* FEEDS BLOCK */
+
+.feed{
+    padding-top:10px;
+    /* background: #F4F6F6; */
+}
+.blog{
+    background: #056b5b;
+    color: white;
+    padding: 20px;
+    border: 3px solid #056b5b;
+    border-radius: 30px;
+    /* box-shadow: 1px 1px 1px 1px black ; */
+    /* font-size: 18px; */
+    padding-left: -15px;
+    padding-right: -15px;
+    margin-top: 10px;
+}
+
+.blog a {
+    color: white;
+
+}
+
+#bettyAsava{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    padding-right: 2px;
+}
+
+.title{
+    background: white;
+    color: black;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 24px;
+    border-bottom: solid 3px white;
+    padding-bottom: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.title a{
+    color: #056b5b;
+    text-decoration: none;
+    transition: all 1s;
+}
+.verified{
+    height: 25px;
+    width: 25px;
+}
+
+.share{
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Sacramento', cursive;
+    /* font-weight: bold; */
+    font-size: 32px;
+}
+
+.social a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.social div {
+    /* height: auto; */
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    background-color: #fff;
+    border: 2px solid black;
+}
+.social div a{
+    color: black;
+    font-family: 'Pangolin',cursive;
+    font-size: 18px;
+}
+
+#shock{
+    height: 50px;
+    width: 50px;
 }
