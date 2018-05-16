@@ -1,0 +1,77 @@
+/* GENERAL CSS */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* NAVIGATION */
+.navy{
+    background: #056b5b;
+    font-family: monospace;
+    font-size: 24px;
+    color: white;
+    height: 150px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+
+}
+
+ul{
+    list-style: none;
+    position: fixed;
+    opacity: 1;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background: black;
+    padding-top: 8%;
+}
+
+ul#hidden li{
+    display: none;
+    
+}
+
+ul li{
+    left: 0;
+    text-decoration: none;
+    text-align: center;
+    margin-left: -40px;
+    display: block;
+    height: 20%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    font-size: 18px;
+}
+
+ul li a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    
+}
+
+ul#hiddenAgenda li:hover{
+    text-decoration: none;
+    background: #056b5b;
+    color: white;
+    cursor: pointer;
+}
+
+ul li a:hover{
+    text-decoration: none;
+    color: white;
+}
+ul li a:used {
+    text-decoration: none;
+    color: white;
+}
+
+#menu:hover ul li{
+    display: block;
+
+}
