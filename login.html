@@ -6,29 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-		<title> Wavo</title>
-		<script src="js/jquery.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
-    <script src="js/script.js"></script>
+    <title> Wavo</title>
+    <script src="js/jquery.js"></script>
 </head>
 <body>
+  <noscript>
+     <h1>No Script</h1>
+  </noscript>
 		<h3>Login Wavo</h3>		
 		<div class="container">
-		  <form id="loginForm">
+		  <form method = "get"  action = "index.html"id="loginForm">
 			<label for="usrname">Email</label>
 			<input type="text" id="usrname" name="usrname" required>
 		
 			<label for="psw">Password</label>
 			<input type="password" id="psw" name="psw" required>
 			
-			<button id="submit">Submit</button>
+		 <button>Submit</button>
 			<span class="psw">Forgot <a href="#">password?</a></span>
-		  </form>
+      </form>
+      </div>
 
 		  <div class="sign-up">
 				<p>Don't have an account?</p>
 		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
-
+      
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <form class="modal-content" action="">
@@ -48,10 +50,15 @@
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
       </label>
-      <div class="clearfix">
+      <div class="">
 		<button type="submit" id="signupbtn">Sign Up now</button>
 		</div>
+  </div>
+  </form>
+  </div>
+</div>
+  </script>
+  <script src="js/scripts.js"></script>
 
-	</div>
 	</body>
 	</html>
