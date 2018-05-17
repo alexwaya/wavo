@@ -1,4 +1,13 @@
-/* Style all input fields */
+
+
+
+
+/* @media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px)  */
+
+    
+    /* Style all input fields */
 input {
     width: 100%;
     padding: 12px;
