@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/liz-bootstrap.css">
+    <link rel="stylesheet" href="assets/css/liz-login.css">
+    <title> Wavo</title>
+    <script src="assets/js/liz-script-wavo-login.js"></script>
+</head>
+<body>
+
+
+  <!-- login page starts here. --> 
+  <div class="container-fluid">
+      <div class="col-md-8 col-md-offset-2">
+            <h3 style="text-align: center">Login Wavo</h3>
+              <div class="jumbotron">
+                  <form method = "get"  action = "index.html"id="loginForm">
+                      <label for="usrname">Email</label>
+                      <input type="text" id="usrname" name="usrname" required>
+                      <label for="psw">Password</label>
+                      <input type="password" id="psw" name="psw" required>	
+                      <button type="submit">Submit</button>
+                  </form>
+                    <p class="psw">Forgot <a href="#">password?</a></p>
+            <!-- sign up modal starts here. --> 
+                <div class="sign-up">
+                    <p>Don't have an account?</p>
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button> 
+                </div>
+              </div>
+        </div>
+    </div>
+        <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="">
+            <div class="container-fluid">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="jumbotron">
+                        <h3>Sign Up</h3>
+                        <p>Please fill in this form to create an account.</p><hr>
+                        <label for="email"><b></b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <label for="psw"><b></b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <label for="psw-repeat"><b></b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                        <div class="">
+                            <button type="submit">Sign Up now</button>
+                        </div>
+                        <p style="text-align: center">Have an account already?</p>
+                        <button type="submit">Log in</button>
+             <!-- sign up modal starts here. --> 
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

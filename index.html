@@ -1,80 +1,591 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Home | Wavo Shop</title>
-<meta charset="utf-8" />
-<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.shop.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WAVO - The Future !</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- fonts & icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pangolin|Cabin+Sketch|Quicksand|Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+    <!-- local styles -->
+    <link rel="stylesheet" href="assets/css/von-bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/von-main.css" />
+    
 </head>
 
+
+    <!-- HOME PAGE DESIGNED BY von MUTINDA  -->
+            <!-- Let There Be Excellence -->
 <body>
+    <div class="container-fluid">
 
-<div id="site">
-	
-	<div id="content">
-		<div id="products">
-			<ul>
-				<li>
-					<div class="product-image">
-						<img src="images/wavo1.jpg" alt="" />
-					</div>
-					<div class="product-description" data-name="wavo #1" data-price="5">
-						<h3 class="product-name">Wavo #1</h3>
-						<p class="product-price">KSH. 5</p>
-						<form class="add-to-cart" action="cart.html" method="post">
-							<div>
-								<label for="qty-1">Quantity</label>
-								<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
-							</div>
-							<p><input type="submit" value="Add to cart" class="btn" /></p>
-						</form>
-					</div>
-				</li>
-				
-				<li>
-					<div class="product-image">
-						<img src="images/wavo2.jpg" alt="" />
-					</div>
-					<div class="product-description" data-name="wavo #2" data-price="8">
-						<h3 class="product-name">Wavo #2</h3>
-						<p class="product-price">KSH. 8</p>
-						<form class="add-to-cart" action="cart.html" method="post">
-							<div>
-								<label for="qty-2">Quantity</label>
-								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
-							</div>
-							<p><input type="submit" value="Add to cart" class="btn" /></p>
-						</form>
-					</div>
-				</li>
-				
-				<li>
-					<div class="product-image">
-						<img src="images/wavo3.jpg" alt="" />
-					</div>
-					<div class="product-description" data-name="wavo #3" data-price="11">
-						<h3 class="product-name">Wavo #3</h3>
-						<p class="product-price">KSH. 9</p>
-						<form class="add-to-cart" action="cart.html" method="post">
-							<div>
-								<label for="qty-3">Quantity</label>
-								<input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
-							</div>
-							<p><input type="submit" value="Add to cart" class="btn" /></p>
-						</form>
-					</div>
-				</li>
+        <!-- THE DROPDOWN NAVIGATION -->
+        
+
+                    <ul id="hiddenAgenda">
+                            
+                            <li id="profile">
+                                <img  src="assets/images/people.png" alt=""><br>
+
+                                <h3>von MUTINDA</h3>
+                                <h4>maxwellmutinda@outlook.com</h4>
+                            </li>
+                       
+                        <li id="unMenu">
+                            <span style="cursor: pointer; color:white;font-size: 24px;" class="glyphicon glyphicon-home"> </span>
+                            <a href="index.html">Home</a>
+                            
+                        </li>
+
+                        <li>
+                            <i style="font-size: 24px; color:white" class="fa fa-comments"></i>
+                            <a href="wavo-chat-room.html">Chats</a>
+                            <span class="notes">
+                                43 + unread
+                            </span>
+                        </li>
+                        <li>
+                            <i style="font-size: 24px; color:white" class="fa fa-shopping-cart"></i>
+                            <a href="wavo-shop.html">moring<i class="fa fa-amazon"></i> SHOP</a>
+                            <span class="notes"><i class="fa fa-fire"></i>NEW</span>
+                        </li>
+                        <li>
+                            <i style="font-size: 24px; color:white" class="fa fa-bed"></i>
+                            <a href="wavo-house.html">H<i class="fa fa-safari"></i>USING</a>
+                        </li>
+                        <li id="myAcc">
+                            <i style="font-size: 24px; color:white" class="fa fa-google-wallet"></i>
+                            <a href="wavo-profile.html"><i style="font-size: 14px;" class="fa fa-maxcdn"></i>Y ACCOUNT</a>
+                            <span class="notes">
+                                <i style="font-size: 10px;" class="fa fa-maxcdn"></i><i class="fa fa-dollar"></i> 3.503
+                            </span>
+                        </li>
 
 
-				
-			</ul>
-		</div>
-	</div>
-	
-	
+                        <li>
+                            <i style="font-size: 24px;color: white" class="fa fa-area-chart"></i>
+                            <a href="#">Trending </a>
 
-</div>
+                            <span class="notes">
+                                1,200 trends
+                            </span>
 
+                        <li id="myAcc">
+                            <i style="font-size: 24px;color: white" class="fa fa-slack"></i>
+                            <a href="#">Channels</a> <span id="loader"></span>
+                        </li>
+
+
+                        <li>
+                            <span style="font-size: 24px; color:white" class="glyphicon glyphicon-cog"></span>
+                            <a href="#">Settings </a>
+                        </li>
+                        <li>
+                            <i style="font-size: 24px; color:white" class="fa fa-power-off"></i>
+                            <a href="wavo-login.html"></i> Logout</a>
+                        </li>
+                        
+
+                    </ul>
+            <div class="row navy">
+                <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+                    <span id="menu"  style="cursor: pointer;" class="glyphicon glyphicon-align-justify"> </span>   
+                </div>
+
+                <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+                    HOME
+                </div>
+
+                <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+                    <i class="fa fa-fort-awesome"></i>
+                </div>
+            </div>
+
+        <!-- END OF DROPDOWN NAVIGATION -->
+
+
+
+
+
+    <!-- DESIGN FOR HOME FEED -->
+        <div class="row feed">
+            <div class="col-md-10 blog col-sm-12 col-xs-12 col-lg 10 col-md-offset-1">
+                        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 title">
+                            <img id="shock" src="assets/profile/man.png" alt="">
+                            <a href="#">Betty Asava</a>
+                            <img class="verified" src="assets/images/omg.png"> shared
+                            <a href="#">4 </a>
+                            <strong>Events</strong> with
+                            <a href="#">Alex Waya </a> and
+                            <a href="#">10 others</a>
+
+                            <div class="extras">. 
+                                <i style="color: #258DE3" class="fa fa-retweet">
+                                
+                                </i>255 retweets .
+                                <i style="color: #E32812" class="fa fa-heart"> </i>23 likes .
+                                <i class="fa fa-comments-o"></i> 45 comments -
+                                <strong>23h</strong> ago .
+                            </div>
+                        </div>
+                <div class="row">
+
+                    <!-- a descriptive image for the post -->
+                    <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3 text-center">
+                        <img id="bettyAsava" src="assets/images/bettyAsava.jpg" alt="">
+                        <h3>Hey Rock Stars!</h3>
+                    </div>
+                    <!-- end of the descriptive image -->
+
+
+                    <div class="description col-md-9 col-sm-12 col-lg-9 col-xs-12 text-center"> 
+                                
+                            <i class="fa fa-quote-left"></i>
+                                <p>Exciting event coming up this <strong>Thursday (6:30pm-8:30pm)</strong></p>
+                                <p>Event Name: <strong>Git Fundamentals For Modern Developers</strong></p>
+                                <p>Presenter: <strong>Ian Munene, Moringa School</strong> @ian</p>
+                                <p>More info and registration details here: https://bit.ly/2I428FU</p>
+                            <i class="fa fa-quote-right"></i>
+                        <div class="location">
+                            <strong>LOCATION : </strong> <i style="font-size: 24px;" class="fa fa-meetup"></i> Ngong Ln Opp The Opposite Sqr
+                        </div> 
+                        <div class="location">
+                            <strong>VENUE : </strong><i class="material-icons">place</i> Moringa School
+                        <div class="time">
+                            <strong>TIME : </strong><i style="font-size: 24px;" class=" fa fa-stumbleupon"></i>  10:20 PM - 12:00 Midnight 
+                        </div> 
+
+                        <h4 class="share">
+                            <img id="trial">
+                            <img src="assets/like.png" alt="">
+                            <img src="assets/omg.png" alt="">
+                            <img src="assets/muniu.png" alt="">
+                            Share this post  <i class="fa fa-share-alt"></i>
+                        </h4>
+                    </div>
+                </div>
+
+            </div>
+
+
+                        <div class="row social">
+                            <div class="col-md-3  col-sm-12 col-xs-12 col-lg-3">
+                                <a href="#">
+                                    <i class="fa fa-whatsapp" style="font-size:32px; color: #52BE80"></i> WhatsApp</a>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+                                <a href="#">
+                                    <i class="fa fa-facebook-square" style="font-size:32px; color: #1da1f2"></i> Facebook</a>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+                                <a href="#">
+                                    <i class="fa fa-twitter" style="font-size:32px; color: #1da1f2"></i> Twitter</a>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+                                <a href="#">
+                                    <i class="fa fa-telegram" style="font-size:32px;color: #4A235A"></i> Telegram</a>
+                            </div>
+                        </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- END OF DESIGN FOR HOME FEED -->
+
+
+
+    <!-- DESIGN FOR HOME FEED -->
+    <div class="row feed">
+        <div class="col-md-10 blog col-sm-12 col-xs-12 col-lg 10 col-md-offset-1">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 title">
+                <img id="shock" src="assets/images/man.png" alt="">
+                <a href="#">Betty Asava</a>
+                <img class="verified" src="assets/images/omg.png"> shared
+                <a href="#">4 </a>
+                <strong>Events</strong> with
+                <a href="#">Alex Waya </a> and
+                <a href="#">10 others</a>
+    
+                <div class="extras">.
+                    <i style="color: #258DE3" class="fa fa-retweet">
+    
+                    </i>255 retweets .
+                    <i style="color: #E32812" class="fa fa-heart"> </i>23 likes .
+                    <i class="fa fa-comments-o"></i> 45 comments -
+                    <strong>23h</strong> ago .
+                </div>
+            </div>
+            <div class="row">
+    
+                <!-- a descriptive image for the post -->
+                <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3 text-center">
+                    <img id="bettyAsava" src="assets/images/bettyAsava.jpg" alt="">
+                    <h3>Hey Rock Stars!</h3>
+                </div>
+                <!-- end of the descriptive image -->
+    
+    
+                <div class="description col-md-9 col-sm-12 col-lg-9 col-xs-12 text-center">
+    
+                    <i class="fa fa-quote-left"></i>
+                    <p>Exciting event coming up this
+                        <strong>Thursday (6:30pm-8:30pm)</strong>
+                    </p>
+                    <p>Event Name:
+                        <strong>Git Fundamentals For Modern Developers</strong>
+                    </p>
+                    <p>Presenter:
+                        <strong>Ian Munene, Moringa School</strong> @ian</p>
+                    <p>More info and registration details here: https://bit.ly/2I428FU</p>
+                    <i class="fa fa-quote-right"></i>
+                    <div class="location">
+                        <strong>LOCATION : </strong>
+                        <i style="font-size: 24px;" class="fa fa-meetup"></i> Ngong Ln Opp The Opposite Sqr
+                    </div>
+                    <div class="location">
+                        <strong>VENUE : </strong>
+                        <i class="material-icons">place</i> Moringa School
+                        <div class="time">
+                            <strong>TIME : </strong>
+                            <i style="font-size: 24px;" class=" fa fa-stumbleupon"></i> 10:20 PM - 12:00 Midnight
+                        </div>
+    
+                        <h4 class="share">
+                            <img id="trial">
+                            <img src="assets/images/like.png" alt="">
+                            <img src="assets/images/omg.png" alt="">
+                            <img src="assets/images/muniu.png" alt=""> Share this post
+                            <i class="fa fa-share-alt"></i>
+                        </h4>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+            <div class="row social">
+                <div class="col-md-3  col-sm-12 col-xs-12 col-lg-3">
+                    <a href="#">
+                        <i class="fa fa-whatsapp" style="font-size:32px; color: #52BE80"></i> WhatsApp</a>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+                    <a href="#">
+                        <i class="fa fa-facebook-square" style="font-size:32px; color: #1da1f2"></i> Facebook</a>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+                    <a href="#">
+                        <i class="fa fa-twitter" style="font-size:32px; color: #1da1f2"></i> Twitter</a>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+                    <a href="#">
+                        <i class="fa fa-telegram" style="font-size:32px;color: #4A235A"></i> Telegram</a>
+                </div>
+            </div>
+    
+    
+    
+        </div>
+    </div>
+    
+    <!-- END OF DESIGN FOR HOME FEED -->
+
+    <!-- DESIGN FOR HOME FEED -->
+    <div class="row feed">
+        <div class="col-md-10 blog col-sm-12 col-xs-12 col-lg 10 col-md-offset-1">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 title">
+                <img id="shock" src="assets/images/man.png" alt="">
+                <a href="#">Betty Asava</a>
+                <img class="verified" src="assets/images/omg.png"> shared
+                <a href="#">4 </a>
+                <strong>Events</strong> with
+                <a href="#">Alex Waya </a> and
+                <a href="#">10 others</a>
+    
+                <div class="extras">.
+                    <i style="color: #258DE3" class="fa fa-retweet">
+    
+                    </i>255 retweets .
+                    <i style="color: #E32812" class="fa fa-heart"> </i>23 likes .
+                    <i class="fa fa-comments-o"></i> 45 comments -
+                    <strong>23h</strong> ago .
+                </div>
+            </div>
+            <div class="row">
+    
+                <!-- a descriptive image for the post -->
+                <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3 text-center">
+                    <img id="bettyAsava" src="assets/images/bettyAsava.jpg" alt="">
+                    <h3>Hey Rock Stars!</h3>
+                </div>
+                <!-- end of the descriptive image -->
+    
+    
+                <div class="description col-md-9 col-sm-12 col-lg-9 col-xs-12 text-center">
+    
+                    <i class="fa fa-quote-left"></i>
+                    <p>Exciting event coming up this
+                        <strong>Thursday (6:30pm-8:30pm)</strong>
+                    </p>
+                    <p>Event Name:
+                        <strong>Git Fundamentals For Modern Developers</strong>
+                    </p>
+                    <p>Presenter:
+                        <strong>Ian Munene, Moringa School</strong> @ian</p>
+                    <p>More info and registration details here: https://bit.ly/2I428FU</p>
+                    <i class="fa fa-quote-right"></i>
+                    <div class="location">
+                        <strong>LOCATION : </strong>
+                        <i style="font-size: 24px;" class="fa fa-meetup"></i> Ngong Ln Opp The Opposite Sqr
+                    </div>
+                    <div class="location">
+                        <strong>VENUE : </strong>
+                        <i class="material-icons">place</i> Moringa School
+                        <div class="time">
+                            <strong>TIME : </strong>
+                            <i style="font-size: 24px;" class=" fa fa-stumbleupon"></i> 10:20 PM - 12:00 Midnight
+                        </div>
+    
+                        <h4 class="share">
+                            <img id="trial">
+                            <img src="assets/images/like.png" alt="">
+                            <img src="assets/images/omg.png" alt="">
+                            <img src="assets/images/muniu.png" alt=""> Share this post
+                            <i class="fa fa-share-alt"></i>
+                        </h4>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+            <div class="row social">
+                <div class="col-md-3  col-sm-12 col-xs-12 col-lg-3">
+                    <a href="#">
+                        <i class="fa fa-whatsapp" style="font-size:32px; color: #52BE80"></i> WhatsApp</a>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+                    <a href="#">
+                        <i class="fa fa-facebook-square" style="font-size:32px; color: #1da1f2"></i> Facebook</a>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+                    <a href="#">
+                        <i class="fa fa-twitter" style="font-size:32px; color: #1da1f2"></i> Twitter</a>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+                    <a href="#">
+                        <i class="fa fa-telegram" style="font-size:32px;color: #4A235A"></i> Telegram</a>
+                </div>
+            </div>
+    
+    
+    
+        </div>
+    </div>
+    
+    <!-- END OF DESIGN FOR HOME FEED -->
+
+
+    <!-- DESIGN FOR HOME FEED -->
+    <div class="row feed">
+        <div class="col-md-10 blog col-sm-12 col-xs-12 col-lg 10 col-md-offset-1">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 title">
+                <img id="shock" src="assets/images/man.png" alt="">
+                <a href="#">Betty Asava</a>
+                <img class="verified" src="assets/images/omg.png"> shared
+                <a href="#">4 </a>
+                <strong>Events</strong> with
+                <a href="#">Alex Waya </a> and
+                <a href="#">10 others</a>
+    
+                <div class="extras">.
+                    <i style="color: #258DE3" class="fa fa-retweet">
+    
+                    </i>255 retweets .
+                    <i style="color: #E32812" class="fa fa-heart"> </i>23 likes .
+                    <i class="fa fa-comments-o"></i> 45 comments -
+                    <strong>23h</strong> ago .
+                </div>
+            </div>
+            <div class="row">
+    
+                <!-- a descriptive image for the post -->
+                <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3 text-center">
+                    <img id="bettyAsava" src="assets/images/bettyAsava.jpg" alt="">
+                    <h3>Hey Rock Stars!</h3>
+                </div>
+                <!-- end of the descriptive image -->
+    
+    
+                <div class="description col-md-9 col-sm-12 col-lg-9 col-xs-12 text-center">
+    
+                    <i class="fa fa-quote-left"></i>
+                    <p>Exciting event coming up this
+                        <strong>Thursday (6:30pm-8:30pm)</strong>
+                    </p>
+                    <p>Event Name:
+                        <strong>Git Fundamentals For Modern Developers</strong>
+                    </p>
+                    <p>Presenter:
+                        <strong>Ian Munene, Moringa School</strong> @ian</p>
+                    <p>More info and registration details here: https://bit.ly/2I428FU</p>
+                    <i class="fa fa-quote-right"></i>
+                    <div class="location">
+                        <strong>LOCATION : </strong>
+                        <i style="font-size: 24px;" class="fa fa-meetup"></i> Ngong Ln Opp The Opposite Sqr
+                    </div>
+                    <div class="location">
+                        <strong>VENUE : </strong>
+                        <i class="material-icons">place</i> Moringa School
+                        <div class="time">
+                            <strong>TIME : </strong>
+                            <i style="font-size: 24px;" class=" fa fa-stumbleupon"></i> 10:20 PM - 12:00 Midnight
+                        </div>
+    
+                        <h4 class="share">
+                            <img id="trial">
+                            <img src="assets/images/like.png" alt="">
+                            <img src="assets/images/omg.png" alt="">
+                            <img src="assets/images/muniu.png" alt=""> Share this post
+                            <i class="fa fa-share-alt"></i>
+                        </h4>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+            <div class="row social">
+                <div class="col-md-3  col-sm-12 col-xs-12 col-lg-3">
+                    <a href="#">
+                        <i class="fa fa-whatsapp" style="font-size:32px; color: #52BE80"></i> WhatsApp</a>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+                    <a href="#">
+                        <i class="fa fa-facebook-square" style="font-size:32px; color: #1da1f2"></i> Facebook</a>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+                    <a href="#">
+                        <i class="fa fa-twitter" style="font-size:32px; color: #1da1f2"></i> Twitter</a>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+                    <a href="#">
+                        <i class="fa fa-telegram" style="font-size:32px;color: #4A235A"></i> Telegram</a>
+                </div>
+            </div>
+    
+    
+    
+        </div>
+    </div>
+    
+    <!-- END OF DESIGN FOR HOME FEED -->
+
+    <!-- DESIGN FOR HOME FEED -->
+    <div class="row feed">
+        <div class="col-md-10 blog col-sm-12 col-xs-12 col-lg 10 col-md-offset-1">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 title">
+                <img id="shock" src="assets/images/man.png" alt="">
+                <a href="#">Betty Asava</a>
+                <img class="verified" src="assets/images/omg.png"> shared
+                <a href="#">4 </a>
+                <strong>Events</strong> with
+                <a href="#">Alex Waya </a> and
+                <a href="#">10 others</a>
+    
+                <div class="extras">.
+                    <i style="color: #258DE3" class="fa fa-retweet">
+    
+                    </i>255 retweets .
+                    <i style="color: #E32812" class="fa fa-heart"> </i>23 likes .
+                    <i class="fa fa-comments-o"></i> 45 comments -
+                    <strong>23h</strong> ago .
+                </div>
+            </div>
+            <div class="row">
+    
+                <!-- a descriptive image for the post -->
+                <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3 text-center">
+                    <img id="bettyAsava" src="assets/images/bettyAsava.jpg" alt="">
+                    <h3>Hey Rock Stars!</h3>
+                </div>
+                <!-- end of the descriptive image -->
+    
+    
+                <div class="description col-md-9 col-sm-12 col-lg-9 col-xs-12 text-center">
+    
+                    <i class="fa fa-quote-left"></i>
+                    <p>Exciting event coming up this
+                        <strong>Thursday (6:30pm-8:30pm)</strong>
+                    </p>
+                    <p>Event Name:
+                        <strong>Git Fundamentals For Modern Developers</strong>
+                    </p>
+                    <p>Presenter:
+                        <strong>Ian Munene, Moringa School</strong> @ian</p>
+                    <p>More info and registration details here: https://bit.ly/2I428FU</p>
+                    <i class="fa fa-quote-right"></i>
+                    <div class="location">
+                        <strong>LOCATION : </strong>
+                        <i style="font-size: 24px;" class="fa fa-meetup"></i> Ngong Ln Opp The Opposite Sqr
+                    </div>
+                    <div class="location">
+                        <strong>VENUE : </strong>
+                        <i class="material-icons">place</i> Moringa School
+                        <div class="time">
+                            <strong>TIME : </strong>
+                            <i style="font-size: 24px;" class=" fa fa-stumbleupon"></i> 10:20 PM - 12:00 Midnight
+                        </div>
+    
+                        <h4 class="share">
+                            <img id="trial">
+                            <img src="assets/images/like.png" alt="">
+                            <img src="assets/images/omg.png" alt="">
+                            <img src="assets/images/muniu.png" alt=""> Share this post
+                            <i class="fa fa-share-alt"></i>
+                        </h4>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+            <div class="row social">
+                <div class="col-md-3  col-sm-12 col-xs-12 col-lg-3">
+                    <a href="#">
+                        <i class="fa fa-whatsapp" style="font-size:32px; color: #52BE80"></i> WhatsApp</a>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+                    <a href="#">
+                        <i class="fa fa-facebook-square" style="font-size:32px; color: #1da1f2"></i> Facebook</a>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+                    <a href="#">
+                        <i class="fa fa-twitter" style="font-size:32px; color: #1da1f2"></i> Twitter</a>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+                    <a href="#">
+                        <i class="fa fa-telegram" style="font-size:32px;color: #4A235A"></i> Telegram</a>
+                </div>
+            </div>
+    
+    
+    
+        </div>
+    </div>
+    
+    <!-- END OF DESIGN FOR HOME FEED -->
+
+
+    </div>
+    
+    <script src="assets/js/von-jquery.js"></script>
+    <script src="assets/js/von-script.js"></script>
 </body>
-</html>	
+</html>
