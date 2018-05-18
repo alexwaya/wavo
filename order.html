@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order | Wavo Shop</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="assets/css/shop-style.css" media="screen" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.shop.js"></script>
+</head>
+
+<body id="checkout-page">
+
+<div id="site">
+
+	
+	<div id="content">
+		<h1>Your Order</h1>
+									<table id="checkout-cart" class="shopping-cart">
+									  <thead>
+										<tr>
+											<th class="col-xs-4">Item</th>
+											<th class="col-xs-4">Qty</th>
+											<th class="col-xs-4">Price</th>
+										</tr>
+									  </thead>
+									  <tbody>
+									  
+									  </tbody>
+									</table>
+		 <div id="pricing">
+			
+	
+			<p id="sub-total">
+				<strong>Total</strong>: <span id="stotal"></span>
+			</p>
+		 </div>		 
+		 
+		 
+<form id="paypal-form" action="" method="post">
+	<input type="hidden" name="cmd" value="_cart" />
+	<input type="hidden" name="upload" value="1" />
+	<input type="hidden" name="business" value="" />
+        
+	<input type="hidden" name="currency_code" value="" />
+	<input type="submit" id="paypal-btn" class="btn" value="Pay with PayPal" />
+</form>
+		 
+		 
+	</div>
+	
+	
+
+</div>
+
+
+</body>
+</html>	
