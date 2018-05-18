@@ -8,9 +8,9 @@
     background-color: #056b5b;
     height:150px;
     }
-    .user-detail{
+    /* .user-detail{
     margin:-50px 0px 30px 0px;
-    }
+    } */
     .user-detail img{
     height:100px;
     width:100px;
@@ -22,12 +22,6 @@
     padding:15px 0px;
     display: inline-block;
     margin-right: 1em;
-    }
-    
-    .user-social-detail a i{
-    color:black;
-    font-size:23px;
-    padding: 0px 5px;
     }
     
     
@@ -54,6 +48,6 @@
         list-style: none;
     }
 
-    li{
+    ul li{
         text-align: center;
     }
