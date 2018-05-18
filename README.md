@@ -1,4 +1,4 @@
-Wavo
+#Wavo
     Final week group project for Moringa prep, Friday May 18,2018
 
 #Description
@@ -23,6 +23,7 @@ Wavo
 
 #Support and contact details
     You can reach out to us for reviews, advice, collaborations and comments at:
+    
     * maxwellmutinda@outlook.com
     * wanjirun240@gmail.com
     * oderolynn@gmail.com

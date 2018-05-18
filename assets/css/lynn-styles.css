@@ -1,0 +1,74 @@
+.container{
+    background-color: #45B39D;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    overflow: auto;
+  }
+
+  .rent1{
+    border-bottom: 3px solid grey!important;
+  }
+
+  .rent2{
+      border-bottom: 3px solid grey !important;
+  }
+
+
+
+
+  .picture{
+    width: 400;
+    height: 300;
+  }
+
+
+
+  .paragraph{
+    /* font-family: 'Life Savers', cursive; */
+    color:  black;
+    font-size: 30px;
+    font-family: 'Fenix', serif;
+
+  }
+
+  input[type=text] {
+      background-color: white;
+      color: black;
+      padding-right: 20px;
+  }
+
+#button3{
+  background-color: #056b5b;
+}
+
+#button4{
+  background-color: #056b5b;
+}
+
+#button2{
+  background-color: #056b5b;
+}
+
+#Email{
+  padding-left: 5px;
+
+}
+
+.img{
+  float: right;
+}
+
+.h5{
+text-align: left;
+}
+
+.img1{
+  float:right;
+}
+
+.img2{
+  float:left;
+}
