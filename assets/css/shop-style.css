@@ -313,6 +313,6 @@ body#checkout-page #site-info {
 }
 
 #paypal-form {
-	margin: 1.5em 0;
+	margin: 0 auto 1em auto;
 }
 
