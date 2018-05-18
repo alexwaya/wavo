@@ -43,52 +43,25 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0 1em;
 }
 
-#masthead {
-	margin-top: 3em;
-	padding: 2em 0 0.5em 0;
-	border-bottom: 1px solid #ddd;
-}
 
-#masthead h1 {
-	margin: 0;
-	font-size: 3.5em;
-	overflow: hidden;
-	padding-left: 85px;
-	min-height: 82px;
-	line-height: 2.3;
-	background: url(../images/logo.png) no-repeat 0 50%;
-	color: #900;
-	
-}
-
-.tagline {
-	float: right;
-	color: #666;
-	font-size: 14px;
-	padding-top: 3.5em;
-}
-
-#products ul {
-	margin: 1.5em 0;
-	padding: 0;
-	list-style: none;
-	overflow: hidden;
-}
-
-#products li {
-	float: left;
-	width: 31%;
-	margin: 0 1%;
-	display: block;
+.prod{
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	background-color: #056b5b;
+	padding-top: 30px;
+	border-radius: 8px;
+	border: 4px solid #000;
 }
 
 .product-image {
 	margin: 0 auto 1em auto;
 	background: #000;
-	width: 150px;
-	height: 150px;
+	width: 300px;
+	height: 300px;
 	overflow: hidden;
-	border-radius: 50%;
+	border-radius: 10%;
 	
 }
 
@@ -111,15 +84,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-price {
-	width: 4em;
-	height: 4em;
-	font-size: 1.2em;
+	width: 10em;
+	font-size: 27px;
 	text-align: center;
 	margin: 1em auto;
 	background: #000;
 	color: #fff;
 	line-height: 4;
-	border-radius: 50%;
+	border-radius: 5%;
 }
 
 form.add-to-cart div,
@@ -128,9 +100,9 @@ form.add-to-cart p {
 }
 
 form input.qty {
-	width: 40px;
+	width: 70px;
 	border: 1px solid #eee;
-	font: 1em 'PT Serif', serif;
+	font: 1.8em 'PT Serif', serif;
 	background: #f9f9f9;
 	color: #000;
 	border-radius: 3px;
@@ -141,7 +113,7 @@ form input.qty {
 	display: inline-block;
 	background: #FFFFFF;
 	color: #056b5b;
-	font: 1em 'PT Serif', serif;
+	font: 2em 'PT Serif', serif;
 	padding: 0.3em 1em;
 	text-align: center;
 	border-radius: 4px;
